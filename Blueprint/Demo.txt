@@ -1,0 +1,39 @@
+A MEAN BLOG APP - Blogging App
+
+Features of the Project-
+
+1) Registration and Login Facility
+
+2) Create, Update and Delete Posts
+
+3) View Self Posts and All Users Post
+
+4) Responsive
+
+SOURCE CODE LINK-
+
+  - 
+
+  - Screen Shots of the Website is provided in Folder Screen Shots
+
+  - Live Server Link for the website - vaishblogmeanapp03070312.us-east-2.elasticbeanstalk.com 
+
+This Webiste is deployed and Hosted in AWS
+
+
+Technologies Used-
+
+  - Front End
+      - Angular 10
+      - HTML5
+      - CSS3
+      - Angular Material
+
+  - Backend 
+      - NodeJs
+      - ExpressJs
+
+  - DataBase
+      - MongoDB (MongoDB Atlas)
+
+

@@ -1,0 +1,27 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-xs>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a routerLink=""><span>{{title}}</span></a>
+  <!--<span class="example-spacer"></span>-->
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout class="navigation-items" fxLayoutGap="10px">
+      <li><span><a mat-button routerLink="/create" *ngIf="userIsAuthenticated">Create</a></span></li>
+      <li><span><a mat-button routerLink="/auth/login" *ngIf="!userIsAuthenticated">Login</a></span></li>
+      <li><span><a mat-button routerLink="/auth/signup" *ngIf="!userIsAuthenticated">Sign Up</a></span></li>
+      <li><span><a mat-button *ngIf="userIsAuthenticated" (click)="onLogout()">Logout</a></span></li>
+      <li>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" *ngIf="userIsAuthenticated">
+          <mat-icon>favorite</mat-icon>
+        </button>
+      </li>
+      <li>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" *ngIf="userIsAuthenticated">
+          <mat-icon>share</mat-icon>
+        </button>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
+
+
